@@ -33,7 +33,7 @@ Designed from **19+ years of Enterprise Data & Solutions Architecture** experien
 
 | Folder / File | Purpose |
 | :--- | :--- |
-| [`docs/architecture.png`](docs/architecture.png) | End-to-end Azure Databricks, Unity Catalog & Claude RAG visual blueprint |
+| [`docs/architecture.svg`](docs/architecture.svg) | End-to-end Azure Databricks, Unity Catalog & Claude RAG visual blueprint |
 | [`docs/adr-catalog.md`](docs/adr-catalog.md) | Architecture Decision Records (ADRs) detailing key design trade-offs |
 | [`governance-sql/01-unity-catalog-setup.sql`](governance-sql/01-unity-catalog-setup.sql) | Domain catalog, ADLS Gen2 external location, Volume & RBAC setup |
 | [`governance-sql/02-pii-dynamic-masking.sql`](governance-sql/02-pii-dynamic-masking.sql) | Dynamic PII column masking and row-level security SQL policies |
