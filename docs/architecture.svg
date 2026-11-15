@@ -1,14 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://w3.org" viewBox="0 0 1320 620" width="1320" height="620" font-family="Helvetica, Arial, sans-serif">
   <rect width="1320" height="620" fill="#ffffff"/>
-  <defs>
-    <marker id="arrowSolid" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#334155"/>
-    </marker>
-    <marker id="arrowDashed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#7c3aed"/>
-    </marker>
-  </defs>
 
   <!-- Title Header -->
   <text x="30" y="38" font-size="20" font-weight="bold" fill="#0f172a">Enterprise Cloud Lakehouse and Governed Claude RAG Architecture</text>
@@ -88,22 +79,47 @@
   <text x="1185" y="449" font-size="12.5" fill="#475569" text-anchor="middle">Contract Assistant</text>
   <text x="1185" y="469" font-size="12" fill="#059669" text-anchor="middle">ACL-Enforced</text>
 
-  <!-- CONNECTORS -->
-  <path d="M 270 185 L 366 185" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
-  <path d="M 270 322 L 315 322 L 315 198 L 366 198" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
-  <path d="M 270 472 L 330 472 L 330 572 L 680 572 L 680 295 L 726 295" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
+  <!-- CONNECTORS + INLINE POLYGON ARROWS -->
+  <path d="M 270 185 L 362 185" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="370,185 358,179 358,191" fill="#334155"/>
 
-  <path d="M 500 224 L 500 244" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
-  <path d="M 500 330 L 500 350" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
-  <path d="M 500 436 L 500 456" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
+  <path d="M 270 322 L 315 322 L 315 198 L 362 198" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="370,198 358,192 358,204" fill="#334155"/>
 
-  <path d="M 730 180 L 634 180" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,4" fill="none" marker-end="url(#arrowDashed)"/>
-  <path d="M 730 205 L 675 205 L 675 490 L 634 490" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,4" fill="none" marker-end="url(#arrowDashed)"/>
+  <path d="M 270 472 L 330 472 L 330 572 L 680 572 L 680 295 L 722 295" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="730,295 718,289 718,301" fill="#334155"/>
 
-  <path d="M 865 336 L 865 354" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
-  <path d="M 630 512 L 695 512 L 695 400 L 726 400" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
-  <path d="M 865 440 L 865 458" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
+  <!-- Vertical Medallion Flow -->
+  <path d="M 500 224 L 500 240" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="500,248 494,236 506,236" fill="#334155"/>
 
-  <path d="M 630 530 L 1050 530 L 1050 262 L 1094 262" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
-  <path d="M 1000 508 L 1065 508 L 1065 438 L 1094 438" stroke="#334155" stroke-width="2.2" fill="none" marker-end="url(#arrowSolid)"/>
+  <path d="M 500 330 L 500 346" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="500,354 494,342 506,342" fill="#334155"/>
+
+  <path d="M 500 436 L 500 452" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="500,460 494,448 506,448" fill="#334155"/>
+
+  <!-- Unity Catalog Governance Dashed Lines -->
+  <path d="M 730 180 L 638 180" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,4" fill="none"/>
+  <polygon points="630,180 642,174 642,186" fill="#7c3aed"/>
+
+  <path d="M 730 205 L 675 205 L 675 490 L 638 490" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,4" fill="none"/>
+  <polygon points="630,490 642,484 642,496" fill="#7c3aed"/>
+
+  <!-- GenAI Flow -->
+  <path d="M 865 336 L 865 350" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="865,358 859,346 871,346" fill="#334155"/>
+
+  <path d="M 630 512 L 695 512 L 695 400 L 722 400" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="730,400 718,394 718,406" fill="#334155"/>
+
+  <path d="M 865 440 L 865 454" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="865,462 859,450 871,450" fill="#334155"/>
+
+  <!-- Consumers Flow -->
+  <path d="M 630 530 L 1050 530 L 1050 262 L 1090 262" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="1098,262 1086,256 1086,268" fill="#334155"/>
+
+  <path d="M 1000 508 L 1065 508 L 1065 438 L 1090 438" stroke="#334155" stroke-width="2.2" fill="none"/>
+  <polygon points="1098,438 1086,432 1086,444" fill="#334155"/>
 </svg>
